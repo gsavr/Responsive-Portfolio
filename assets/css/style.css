@@ -3,6 +3,15 @@
     margin: 0;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
+body{
+    margin-bottom: 60px;
+}
+
 html body{
     background-image: url(../images/dust_scratches.png);
     font-family: Arial, Helvetica, sans-serif;
@@ -30,6 +39,8 @@ header {
     padding: 30px;
     color: white;
     margin-top: -25px;
+    font-size: 1rem;
+    transition: font-size 0.5s;
 }
 
 .header-links{
@@ -80,12 +91,13 @@ h2, h3 {
 #profile-pic {
     padding: 20px;
     float: left;
-    height: 150px;
+    height: 200px;
 }
 
 p {
     color: #777777;
     padding: 20px;
+    font-size: 18px;
 }
 
 .body-p {
@@ -105,6 +117,12 @@ p {
     padding-bottom: 5px;
     border-top: 2px solid #aec5df;
     margin-top: 50px;
+    line-height: 30px;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
 }
    
 /* Container holding the image and the text in Portfolio page */
@@ -113,8 +131,9 @@ p {
     position: relative;
     text-align: center;
     color: white;
-    display: inline-block; /* use this for mozill instead of inline only */
+    display: inline-block; /* use this for mozilla instead of inline only */
     margin-left: 50px;
+    transition: width 0.5s;
 }
 
 .content-portfolio {    /* size of content in webpage and centering in browser */
@@ -139,6 +158,8 @@ p {
 
 .portfolio-img{
     margin-top: 50px;
+    width:100%;
+    transition: width 0.5s;
 }
 
 .footer-scroll {
@@ -187,3 +208,81 @@ input {
       font-size: 15px;
       
   }
+
+@media screen and (max-width: 980px) {
+    .header-links{
+      padding: 5px;
+      background-color: #E0E7E9;
+    }
+
+    .content-portfolio  {
+        margin-left: 0;
+        width:100%;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .header-links{
+      padding: 5px;
+      background-color: #E0E7E9;
+    }
+
+    .content-portfolio  {
+        margin-left: 0;
+        width:100%;
+    }
+
+    .container{
+        width: 600px;
+    }
+
+    .portfolio-img{
+        margin-top: 50px;
+        width: 600px;
+    }
+      
+}
+@media screen and (max-width: 640px) {
+    .header-links{
+      padding: 5px;
+      background-color: #E0E7E9;
+    }
+
+    .content-portfolio  {
+        margin-left: 0;
+        width:100%;
+    }
+
+    nav{
+    float:left;
+    border-bottom: 1px solid #aec5df;
+    border-left: 1px solid #aec5df;
+    border-right: 1px solid #aec5df;
+    margin-top:10px;
+    }
+
+    #name{
+    padding: 20px;
+    font-size: .8rem;
+    }
+
+
+    .container{
+        margin:0;
+        width:100%;
+    }
+
+    .portfolio-img{
+        margin-top: 50px;
+        width: 400px;
+    }
+
+    .portfolio-desc{
+        width:400px;
+    }
+
+    div.content-portfolio  {
+        margin: 0;
+    }
+      
+}
