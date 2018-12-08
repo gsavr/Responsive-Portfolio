@@ -253,17 +253,27 @@ input {
         width:100%;
     }
 
+    header{
+        margin:0;
+        padding:0;
+        padding-top:20px;
+        text-align: center;
+    }
+
     nav{
-    float:left;
+    float:center;
     border-bottom: 1px solid #aec5df;
     border-left: 1px solid #aec5df;
     border-right: 1px solid #aec5df;
     margin-top:10px;
+    width:100%;
     }
 
     #name{
     padding: 20px;
+    padding-left:0;
     font-size: .8rem;
+    width: 100%;
     }
 
 
