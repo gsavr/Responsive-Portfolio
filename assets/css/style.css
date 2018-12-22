@@ -147,6 +147,7 @@ p {
 
 .portfolio-desc {
     background-color: #6C7A89;
+    background-image: linear-gradient(to right,  #6C7A89 ,  rgb(168, 188, 209));
     position: absolute;
     bottom: 8px;
     width: 100%;
